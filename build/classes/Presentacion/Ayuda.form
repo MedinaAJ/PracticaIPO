@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" pref="419" max="32767" attributes="0"/>
+                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                      <Component id="btnAtras" min="-2" pref="194" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" pref="57" max="-2" attributes="0"/>
+                  <Component id="btnAtras" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="527" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Informaci&#xf3;n sobre esta aplicaci&#xf3;n"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtAyuda">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="&#x9;Este programa ha sido dise&#xf1;ado para su uso como aplicaci&#xf3;n de gestion de &#xa;&#x9;proyectos y tareas. Ha sido programado para la plataforma Java y por tanto &#xa;&#x9;puede ejecutarse en cualquier sistema operativo que tenga instalada la &#xa;&#x9;maquina virtual Java, disponible en http://www.java.com. &#xa;&#xa;1 .- Men&#xfa; de opciones&#xa;&#xa;&#x9;El interfaz del programa ofrece al usuario un men&#xfa; de opciones con el que &#xa;&#x9;poder acceder a las distintas funciones.&#xa;&#xa;&#x9;&#x9;Funciones:&#xa;&#x9;&#x9;&#x9;- Gestionar usuarios.&#xa;&#x9;&#x9;&#x9;- Gestionar proyectos.&#xa;&#x9;&#x9;&#x9;- Gestionar Tareas.&#xa;&#x9;&#x9;&#x9;- Opciones de usuario.&#xa;&#x9;&#x9;&#x9;- Mensajes.&#xa;&#xa;&#x9;Ademas proporciona un boton en la esquina inferior derecha con el que salir&#xa;&#x9;de la aplicaci&#xf3;n en cualquier momento.&#xa;&#xa;2 .- Gestores&#xa;&#xa;&#x9;En este apartado comprenderemos las funciones comunes al gestor de usuario,&#xa;&#x9;gestor de proyectos y gestor de tareas.&#xa;&#x9;Los tres estan compuestos por una lista en la parte izquierda, donde &#xa;&#x9;aparecera el identificador de usuario, proyecto o tarea, haciendo click&#xa;&#x9;sobre uno conseguiremos que aparezca sombreado, y se cargaran en los &#xa;&#x9;campos de texto la informaci&#xf3;n almacenada sobre ellos.&#xa;&#x9;&#xa;&#x9;Tenemos 4 botones, a&#xf1;adir, modificar, eliminar y limpiar campos.&#xa;&#x9;Con el boton a&#xf1;adir rellenando los campos podremos a&#xf1;adir elementos a &#xa;&#x9;nuestro sistema, con el modificar editar uno cargado previamente, y el de&#xa;&#x9;eliminar elimina al elemento seleccionado de la BBDD. El boton de limpiar &#xa;&#x9;campos simplemente vacia el contenido textual de los campos de la aplicaci&#xf3;n&#xa;&#x9;sin modificar nuestra informaci&#xf3;n almacenada.&#xa;&#x9;&#xa;3 .- Gestor de usuarios&#xa;&#xa;&#x9;Lo &#xfa;nico que a&#xf1;adir respecto al gestor de usuario es que la contrase&#xf1;a no &#xa;&#x9;se muestra, pero al a&#xf1;adir un usuario si se puede escribir la contrase&#xf1;a.&#xa;&#x9;&#xa;4 .- Gestor de proyectos&#xa;&#xa;&#x9;El campo ID no se puede modificar ya que cada uno de nuestros proyectos&#xa;&#x9;viene asignado por un ID que ser&#xe1; asignado automaticamente por la &#xa;&#x9;aplicaci&#xf3;n, por tanto se puede consultar el ID, pero no editar.&#xa;&#xa;5 .- Gestor de tareas&#xa;&#xa;&#x9;El campo usuario responsable y proyecto no pueden ser cualquiera, ya que&#xa;&#x9;las tareas deben ser asignadas a usuarios y proyectos ya existentes, por&#xa;&#x9;tanto solo se podr&#xe1; seleccionar un usuario o proyecto ya existente en la &#xa;&#x9;BBDD.&#xa;&#xa;6 .- Opciones de usuario&#xa;&#xa;&#x9;En este apartado podr&#xe1;s cambiar tu contrase&#xf1;a, que solo funcionar&#xe1; si &#xa;&#x9;escribes dos veces la nueva contrase&#xf1;a, por motivos de seguridad y cerrar &#xa;&#x9;sesi&#xf3;n cuando otro compa&#xf1;ero quiera ocupar el terminal que utilizas.&#xa;&#x9;&#xa;7 .- Mensajes&#xa;&#xa;&#x9;Este apartado puede ser dividido en dos partes, por un lado una lista a la&#xa;&#x9;izquierda, y por otro un area de texto a la derecha. A la lista llegar&#xe1;n &#xa;&#x9;los mensajes de difusi&#xf3;n, y los mensajes exclusivos para ti, y al pinchar&#xa;&#x9;sobre uno en el area de texto se cargar&#xe1; el mensaje, de esta forma podr&#xe1;n&#xa;&#x9;comunicarse contigo.&#xa;&#xa;&#xa;&#x9;&#x9;&#xa1;Espero haberte ayudado!"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnAtras">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Atras"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtrasActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
